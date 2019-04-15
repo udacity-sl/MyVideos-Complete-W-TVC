@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5eL-dO-fuh">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ewH-mA-HT0">
+            <objects>
+                <viewController id="5eL-dO-fuh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o0V-17-dHI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="oCM-pf-w0G">
+                                <rect key="frame" x="27.5" y="243.5" width="320" height="180"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TED_three_letter_logo.svg" translatesAutoresizingMaskIntoConstraints="NO" id="6Pv-Mx-LFO">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="0Uf-y3-kVG"/>
+                                            <constraint firstAttribute="width" constant="320" id="2pm-ns-B2a"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.11748389150000001" green="0.1213654056" blue="0.13381612300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="oCM-pf-w0G" firstAttribute="centerY" secondItem="o0V-17-dHI" secondAttribute="centerY" id="Ixc-FL-tiV"/>
+                            <constraint firstItem="oCM-pf-w0G" firstAttribute="centerX" secondItem="o0V-17-dHI" secondAttribute="centerX" id="TIv-Yv-lzv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IWQ-VN-YvV"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6gU-d4-Ita">
+                        <barButtonItem key="backBarButtonItem" title=" " id="ZAo-ps-0V6"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4l9-zN-gwh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-612" y="307"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="TED_three_letter_logo.svg" width="600" height="220.5"/>
+    </resources>
+</document>

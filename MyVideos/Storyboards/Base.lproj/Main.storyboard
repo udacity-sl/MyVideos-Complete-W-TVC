@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mBL-N7-2aF">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--TED Videos-->
+        <scene sceneID="HsW-Yx-o9U">
+            <objects>
+                <tableViewController id="NN3-Ku-TTg" customClass="VideosTVC" customModule="MyVideos" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="250" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="LD4-cD-dbZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.11748389154672623" green="0.12136540561914444" blue="0.13381612300872803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <edgeInsets key="layoutMargins" top="0.0" left="20" bottom="0.0" right="20"/>
+                        <inset key="scrollIndicatorInsets" minX="0.0" minY="16" maxX="0.0" maxY="16"/>
+                        <color key="sectionIndexBackgroundColor" red="0.11748389150000001" green="0.1213654056" blue="0.13381612300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoCell" rowHeight="250" id="YT7-HZ-RoA" customClass="VideoTableViewCell" customModule="MyVideos" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="250"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YT7-HZ-RoA" id="eZ3-ZI-Spt">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="v1" translatesAutoresizingMaskIntoConstraints="NO" id="tzp-A4-tKC">
+                                            <rect key="frame" x="14" y="16" width="347" height="226"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn-play" translatesAutoresizingMaskIntoConstraints="NO" id="Ch1-gx-FQy">
+                                            <rect key="frame" x="14" y="178" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="YAs-I3-qS9"/>
+                                                <constraint firstAttribute="height" constant="64" id="neN-aH-err"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xwr-K6-cc6">
+                                            <rect key="frame" x="78" y="199.66666666666666" width="106" height="21"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.11748389154672623" green="0.12136540561914444" blue="0.13381612300872803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="Ch1-gx-FQy" firstAttribute="leading" secondItem="tzp-A4-tKC" secondAttribute="leading" id="3jd-MK-Bpt"/>
+                                        <constraint firstItem="tzp-A4-tKC" firstAttribute="top" secondItem="eZ3-ZI-Spt" secondAttribute="top" constant="16" id="8TW-Nv-0sh"/>
+                                        <constraint firstItem="Xwr-K6-cc6" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="tzp-A4-tKC" secondAttribute="trailing" constant="-16" id="Kny-hI-aEJ"/>
+                                        <constraint firstAttribute="trailing" secondItem="tzp-A4-tKC" secondAttribute="trailing" constant="14" id="MPQ-3p-cHZ"/>
+                                        <constraint firstItem="Xwr-K6-cc6" firstAttribute="centerY" secondItem="Ch1-gx-FQy" secondAttribute="centerY" id="P5u-jc-Fxb"/>
+                                        <constraint firstItem="tzp-A4-tKC" firstAttribute="leading" secondItem="eZ3-ZI-Spt" secondAttribute="leading" constant="14" id="nDS-gH-WCa"/>
+                                        <constraint firstAttribute="bottom" secondItem="tzp-A4-tKC" secondAttribute="bottom" constant="8" id="t4D-Mb-brn"/>
+                                        <constraint firstItem="Xwr-K6-cc6" firstAttribute="leading" secondItem="Ch1-gx-FQy" secondAttribute="trailing" id="uTe-P7-G8s"/>
+                                        <constraint firstItem="Ch1-gx-FQy" firstAttribute="bottom" secondItem="tzp-A4-tKC" secondAttribute="bottom" id="xIa-zp-k8P"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.11748389150000001" green="0.1213654056" blue="0.13381612300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="thumbnailImageView" destination="tzp-A4-tKC" id="Wfb-CI-tct"/>
+                                    <outlet property="usernameLabel" destination="Xwr-K6-cc6" id="XXZ-39-nJQ"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="NN3-Ku-TTg" id="10m-bg-ONU"/>
+                            <outlet property="delegate" destination="NN3-Ku-TTg" id="gOB-ht-SQL"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="TED Videos" id="QR4-jo-LmF"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D26-Gv-dnY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="490" y="90"/>
+        </scene>
+        <!--FirstVC-->
+        <scene sceneID="Xrn-WO-r9G">
+            <objects>
+                <viewController id="YWk-2W-pSL" customClass="FirstVC" customModule="MyVideos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UQr-Mt-ngY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="tMs-cc-NGU">
+                                <rect key="frame" x="27.666666666666657" y="280" width="320" height="252"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TED_three_letter_logo.svg" translatesAutoresizingMaskIntoConstraints="NO" id="bWK-en-qJ7">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="320" id="djT-w2-9E9"/>
+                                            <constraint firstAttribute="height" constant="180" id="iIy-Hv-BKz"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dX1-8s-6ux">
+                                        <rect key="frame" x="107" y="210" width="106" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="mG9-wy-peA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="25"/>
+                                        <state key="normal" title="Let's GO">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="NN3-Ku-TTg" kind="show" id="cB4-3f-y2v"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.11748389154672623" green="0.12136540561914444" blue="0.13381612300872803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tMs-cc-NGU" firstAttribute="centerX" secondItem="UQr-Mt-ngY" secondAttribute="centerX" id="KSh-KN-Uh3"/>
+                            <constraint firstItem="tMs-cc-NGU" firstAttribute="centerY" secondItem="UQr-Mt-ngY" secondAttribute="centerY" id="shi-2F-jUB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="omg-FW-VP9"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="adV-EU-uvB">
+                        <barButtonItem key="backBarButtonItem" title=" " id="viZ-v8-zim"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="letsGoButton" destination="dX1-8s-6ux" id="rOh-SA-aoW"/>
+                        <outlet property="letsGoButtonHeightConstraint" destination="mG9-wy-peA" id="czF-3M-8Ha"/>
+                        <outlet property="tedImageView" destination="bWK-en-qJ7" id="nu2-px-UN9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ard-w0-Sfs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-295" y="89"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dqf-An-32p">
+            <objects>
+                <navigationController id="mBL-N7-2aF" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" largeTitles="YES" id="sUW-di-Uag">
+                        <rect key="frame" x="0.0" y="44" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="YWk-2W-pSL" kind="relationship" relationship="rootViewController" id="WV0-Sp-eld"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fyc-pA-kG0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1094" y="90"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="TED_three_letter_logo.svg" width="600" height="220.5"/>
+        <image name="btn-play" width="373" height="373"/>
+        <image name="v1" width="3820" height="2148"/>
+    </resources>
+</document>
